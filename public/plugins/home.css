@@ -1,0 +1,74 @@
+html {
+  scroll-behavior: smooth;
+  font-family: Helvetica, sans-serif, Arial;
+}
+
+body {
+  margin: 0 auto;
+  background-image: url('/images/fitfchatbg.jpg');
+  background-size: cover;
+  height: 10vh;
+  background-repeat: no-repeat;
+  /* background-color: #222; */
+}
+.topnav {
+  background-color: #222222;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #d21212;
+  color: white;
+  
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ef3131;
+  transition: opacity 15s, visibility 1s;
+  }
+  
+  .loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+  }
+  
+  .loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #000000;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+  }
